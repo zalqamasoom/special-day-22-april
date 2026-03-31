@@ -57,8 +57,19 @@
     <h1>Happy Birthday Moona! 🎂✨</h1>
 
     <div style="margin-bottom: 20px;">
-<audio autoplay loop controls style="display:none;">
-  <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+<div style="margin-bottom: 20px;">
+    <button onclick="playMusic()" style="padding: 10px 20px; background-color: #d81b60; color: white; border: none; border-radius: 20px; cursor: pointer; font-weight: bold; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+        🎵 Play Birthday Music
+    </button>
+    <div id="music-container"></div>
+</div>
+
+<script>
+function playMusic() {
+    const container = document.getElementById('music-container');
+    container.innerHTML = '<iframe width="0" height="0" src="https://www.youtube.com/embed/F9Esh7pY8o0?autoplay=1&loop=1&playlist=F9Esh7pY8o0" frameborder="0" allow="autoplay"></iframe>';
+}
+</script>
 </audio>
         <p style="font-size: 12px; color: #888;">(Press any key to start the birthday music! 🎵)</p>
     </div>
